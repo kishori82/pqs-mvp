@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> PQSpice Drag & Drop Encryption/Decryption </title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left panel -->
+        <div class="panel">
+            <h3>Encryption</h3> <!-- Header text -->
+            <input type="text" id="urlInput0"  placeholder="Folder name">
+            <button id="loadbutton0">Select Folder</button>
+            <div id="progress-bar0"  class="progress-bar-class"> </div>
+            <div id="result0" style="font-weight: bold;">   </div>
+            <div id="dropzone0" class="file_explorer"></div>
+        </div>
+    
+        <!-- Right panel (same content as left panel) -->
+        <div class="panel">
+            <h3>Decryption</h3> <!-- Header text -->
+            <input type="text" id="urlInput1" placeholder="Folder name">
+            <button id="loadbutton1">Select Folder</button>
+            <div id="progress-bar1"> </div>
+            <div id="result1" style="font-weight: bold;">   </div>
+            <div id="dropzone1" class="file_explorer"></div>
+        </div>
+    </div>
+
+    <script src="./renderer.js" defer></script>
+</body>
+</html>
+
